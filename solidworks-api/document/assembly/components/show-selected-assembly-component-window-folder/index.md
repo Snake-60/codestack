@@ -28,3 +28,15 @@ If none of the components selected then the path of active model will be opened.
 Watch [video demonstration](https://youtu.be/9uZCecGg25I?t=266)
 
 {% code-snippet { file-name: macro.vba } %}
+
+If we want to see maximized opened window then we must change the string:
+
+~~~ cmd
+    Shell "explorer.exe /select, " & """" & path & """"
+~~~
+
+by this:
+
+~~~ cmd
+    Shell "explorer.exe /select, " & """" & path & """", vbNormalFocus
+~~~
