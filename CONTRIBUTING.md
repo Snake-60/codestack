@@ -1,1 +1,1 @@
-Visit [this blog post](https://blog.xarial.com/codestack-opensource/) for contributing guidelines.
+Посетите [this blog post](https://blog.xarial.com/codestack-opensource/) для получения рекомендаций по внесению вклада.
