@@ -1,82 +1,82 @@
 ---
-title: Standard Types in Visual Basic
-caption: Standard Types
-description: Overview of standard types in Visual Basic (i.e. Integer, String, Double, Object etc.) in Visual Basic
+title: Стандартные типы в Visual Basic
+caption: Стандартные типы
+description: Обзор стандартных типов в Visual Basic (т.е. Integer, String, Double, Object и т.д.) в Visual Basic
 image: vba-integer-overflow.png
 order: 1
 ---
-The following classifications list different standard types in Visual Basic grouped by categories. Each type allocates different size of memory storage. Some of the types have declaration character which can be used to explicitly define the type of the variable in a short form. Most of the types provide specific function to convert the value from a variant.
+Следующие классификации перечисляют различные стандартные типы в Visual Basic, сгруппированные по категориям. Каждый тип выделяет разный объем памяти для хранения. Некоторые типы имеют символ объявления, который можно использовать для явного определения типа переменной в краткой форме. Большинство типов предоставляют конкретную функцию для преобразования значения из варианта.
 
-## Numeric
+## Числовые
 
-Numeric type variables are used to hold positive and negative integer values (without the decimal point), e.g. 1, 2, 10, -10, -1000 etc. Different numeric types allow storing different value ranges and requires different size of the allocated storage. The most commonly used type is [Integer](#integer).
+Переменные числового типа используются для хранения положительных и отрицательных целых значений (без десятичной точки), например, 1, 2, 10, -10, -1000 и т.д. Различные числовые типы позволяют хранить разные диапазоны значений и требуют разного размера выделяемого хранилища. Наиболее часто используемым типом является [Integer](#integer).
 
-If the assigned value doesn't fit the range Run-time error '6' overflow will be displayed at the compile time.
+Если присвоенное значение не соответствует диапазону, во время компиляции будет отображаться ошибка времени выполнения '6' переполнение.
 
-![Run-time error '6' overflow when assigned integer value out of the accepted range](vba-integer-overflow.png){ width=350 }
+![Ошибка времени выполнения '6' переполнение при присвоении целого значения вне допустимого диапазона](vba-integer-overflow.png){ width=350 }
 
 ### Byte
-Allocates 1 byte of storage. Value ranges from 0 through 255. The function of converting to Byte is *CByte*.
+Выделяет 1 байт памяти. Диапазон значений от 0 до 255. Функция преобразования в Byte - *CByte*.
 
 ### Integer
-Allocates 2 bytes of storage. Value ranges from –32,768 through 32,767. The type declaration character for integer is %. The function of converting to Integer is *CInt*.
+Выделяет 2 байта памяти. Диапазон значений от –32,768 до 32,767. Символ объявления типа для integer - %. Функция преобразования в Integer - *CInt*.
 
-### Long 
-Allocates 4 bytes of storage. Value ranges from –2,147,483,648 through 2,147,486,647. The type declaration character for long is &. The function of converting to Long is *CLng*
+### Long
+Выделяет 4 байта памяти. Диапазон значений от –2,147,483,648 до 2,147,486,647. Символ объявления типа для long - &. Функция преобразования в Long - *CLng*
 
 ### LongLong
-Allocates 8 bytes of storage. Value ranges from -9,223,372,036,854,775,808 through 9,223,372,036,854,775,807. Type declaration character for LongLong is ^. LongLong is a valid declared type only on 64-bit platforms.
+Выделяет 8 байтов памяти. Диапазон значений от -9,223,372,036,854,775,808 до 9,223,372,036,854,775,807. Символ объявления типа для LongLong - ^. LongLong является допустимым объявленным типом только на 64-битных платформах.
 
 ### LongPtr
-Represents [Long](#long) type (4 bytes) on 32-bit systems and [LongLong](longlong) type (8 bytes) on 64-bit systems.
+Представляет тип [Long](#long) (4 байта) в 32-битных системах и тип [LongLong](longlong) (8 байтов) в 64-битных системах.
 
-LongPtr usually used for writing portable code that can run in both 32-bit and 64-bit environments. In particular this is used in [Windows 32 APIs](visual-basic/windows-api) for pointers and handles.
+LongPtr обычно используется для написания переносимого кода, который может работать как в 32-битных, так и в 64-битных средах. В частности, это используется в [Windows 32 APIs](visual-basic/windows-api) для указателей и дескрипторов.
 
-## Numeric with decimal point
-These types of variables are used to hold positive and negative numeric values with decimal points, i.e. 20.5, -152.89 etc. Different type of variables allow to store different value ranges with different precisions. The most commonly used type is [Double](double). For high precision numbers either [Currency](currency) or [Decimal](decimal) types can be used.
+## Числовые с десятичной точкой
+Эти типы переменных используются для хранения положительных и отрицательных числовых значений с десятичными точками, т.е. 20.5, -152.89 и т.д. Различные типы переменных позволяют хранить разные диапазоны значений с разной точностью. Наиболее часто используемым типом является [Double](double). Для чисел с высокой точностью можно использовать типы [Currency](currency) или [Decimal](decimal).
 
 ### Single
-Allocates 4 bytes of storage. Value ranges from –3.402823E38 through –1.401298E–45 or 1.401298E–45 through 3.402823E38. The type declaration character for single is !. The function of converting to Single is *CSng*
+Выделяет 4 байта памяти. Диапазон значений от –3.402823E38 до –1.401298E–45 или от 1.401298E–45 до 3.402823E38. Символ объявления типа для single - !. Функция преобразования в Single - *CSng*
 
 ### Double
-Allocates 8 bytes of storage. Value ranges from –1.79769313486232E308 through –4.94065645841247E–324 or 1.79769313486232E308 through 4.94065645841247E–324. The type declaration character for double is #. The function of converting to Single is *CDbl*
+Выделяет 8 байтов памяти. Диапазон значений от –1.79769313486232E308 до –4.94065645841247E–324 или от 1.79769313486232E308 до 4.94065645841247E–324. Символ объявления типа для double - #. Функция преобразования в Single - *CDbl*
 
 ### Currency
-Allocates 8 bytes of storage. Value ranges from –922,337,203,477.5808 through 922,337,203,685,477.5807. The type declaration character for integer is @. The function of converting to Currency is *CCur*
+Выделяет 8 байтов памяти. Диапазон значений от –922,337,203,477.5808 до 922,337,203,685,477.5807. Символ объявления типа для integer - @. Функция преобразования в Currency - *CCur*
 
 ### Decimal
-Allocates 14 bytes of storage. Value ranges from -79,228,162,514,264,337,593,543,950,335 through 79,228,162,514,264,337,593,543,950,335 or –7.2998162514264337593543950335 through 7.9228162514264337593543950335.  The function of converting to Decimal is *CDec*. Note that variable of type Decimal must be declared as [Variant](visual-basic/variables/standard-types#variant) and assigned using *CDec* function.
+Выделяет 14 байтов памяти. Диапазон значений от -79,228,162,514,264,337,593,543,950,335 до 79,228,162,514,264,337,593,543,950,335 или от –7.2998162514264337593543950335 до 7.9228162514264337593543950335. Функция преобразования в Decimal - *CDec*. Обратите внимание, что переменная типа Decimal должна быть объявлена как [Variant](visual-basic/variables/standard-types#variant) и назначена с помощью функции *CDec*.
 
-## Logical
-Logical variables are used in [conditions](visual-basic/conditions) and presented as 1 (True) or 0 (False)
+## Логические
+Логические переменные используются в [условиях](visual-basic/conditions) и представляются как 1 (True) или 0 (False)
 
 ### Boolean
-Allocates 2 bytes of storage. Either True or False. The function of converting to Boolean is *CBool*
+Выделяет 2 байта памяти. Либо True, либо False. Функция преобразования в Boolean - *CBool*
 
-## Text
-Text variables are holding literals and when defined are enclosed in double quotes "".
+## Текстовые
+Текстовые переменные содержат литералы и при определении заключаются в двойные кавычки "".
 
 ### String
-Allocates 10 bytes plus the number of characters of storage. Value ranges from 0 through 2 billion characters. The function of converting to String is *CStr*
+Выделяет 10 байтов плюс количество символов для хранения. Диапазон значений от 0 до 2 миллиардов символов. Функция преобразования в String - *CStr*
 
-## Date and Time
-Variable holding the information about date and time.
+## Дата и время
+Переменная, содержащая информацию о дате и времени.
 
 ## Date
-Allocates 8 bytes of storage. Value ranges from January 1, 100 to December 31, 9999. The function of converting to String is *CDate*
+Выделяет 8 байтов памяти. Диапазон значений от 1 января 100 года до 31 декабря 9999 года. Функция преобразования в String - *CDate*
 
-## Reference 
-These variables are any reference types which might hold complex data and structures.
+## Ссылочные
+Эти переменные являются любыми ссылочными типами, которые могут содержать сложные данные и структуры.
 
 ### Object
-Allocates 4 bytes of storage. Used in [Late Binding](visual-basic/variables/declaration#early-binding-and-late- binding)
+Выделяет 4 байта памяти. Используется в [Позднем связывании](visual-basic/variables/declaration#early-binding-and-late- binding)
 
-## Any
-These variable types can hold any data object (either value type, reference type or arrays)
+## Любые
+Эти типы переменных могут содержать любой объект данных (либо тип значения, ссылочный тип или массивы)
 
 ### Variant
-Allocates 16 bytes of storage. The function of converting to Variant is *CVar*
+Выделяет 16 байтов памяти. Функция преобразования в Variant - *CVar*
 
-The code example below demonstrates declaration and conversion of various standard data types.
+Пример кода ниже демонстрирует объявление и преобразование различных стандартных типов данных.
 
 {% code-snippet { file-name: example.vba } %}
