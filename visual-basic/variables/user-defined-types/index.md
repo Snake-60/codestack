@@ -1,46 +1,46 @@
 ---
-title: 'Visual Basic data structures: objects, types, enumerations'
-caption: User Defined Types
-description: Overview of user defined types in Visual Basic (i.e. objects, types, enumerations) in Visual Basic
+title: 'Структуры данных Visual Basic: объекты, типы, перечисления'
+caption: Пользовательские типы данных
+description: Обзор пользовательских типов данных в Visual Basic (т.е. объекты, типы, перечисления) в Visual Basic
 image: class-module-class-declaration.png
 order: 2
 ---
 
-## Enumerations
+## Перечисления
 
-Enumerations are Visual Basic data types which hold sets of integer constants. Enumerations are useful to define family of constants to be used by the developers (i.e. options).
+Перечисления - это типы данных Visual Basic, которые содержат наборы целочисленных констант. Перечисления полезны для определения семейства констант, которые будут использоваться разработчиками (т.е. опции).
 
-Refer [Enumerations](/visual-basic/data-structures/enumerators) article for more information about enumerators.
+Обратитесь к статье [Перечисления](/visual-basic/data-structures/enumerators) для получения дополнительной информации о перечислителях.
 
-Enumerators are treated as any other data types and can be declared and assigned. Enumerations can be assigned implicitly and explicitly.
+Перечислители обрабатываются как любые другие типы данных и могут быть объявлены и назначены. Перечисления могут быть назначены явно и неявно.
 
 ~~~ vb
 Dim myEnumVal As MyEnum_e
 Dim myEnumVal1 As MyEnum_e
-myEnumVal = MyEnum_e.Val1 'assigning the enumerator explicitly stating the name of enumerator
-myEnumVal1 = Val1 'implicit assignment of the enumerator
+myEnumVal = MyEnum_e.Val1 'назначение перечислителя с явным указанием имени перечисления
+myEnumVal1 = Val1 'неявное назначение перечислителя
 ~~~
 
-## Type
+## Тип
 
-Visual Basic allows to create new data groups. Custom user-defined Type is a data type, also known as *Structure* which allows to define complex data storage. Types are useful when it is required to pass or store the data which consists of multiple elements (e.g. geometrical point, log entry, etc.)
+Visual Basic позволяет создавать новые группы данных. Пользовательский тип Type - это тип данных, также известный как *Structure*, который позволяет определять сложное хранилище данных. Типы полезны, когда требуется передать или сохранить данные, состоящие из нескольких элементов (например, геометрическая точка, запись журнала и т.д.)
 
-Refer [Custom User Defined Types](/visual-basic/data-structures/types) article for more information about custom types.
+Обратитесь к статье [Пользовательские типы данных](/visual-basic/data-structures/types) для получения дополнительной информации о пользовательских типах.
 
-## Class
+## Класс
 
-Unlike enumerations and types classes can only be created in separate Visual Basic class modules.
+В отличие от перечислений и типов, классы могут создаваться только в отдельных модулях классов Visual Basic.
 
-![MyClass class module is added to the Visual Basic project](class-module-class-declaration.png){ width=500 }
+![Модуль класса MyClass добавлен в проект Visual Basic](class-module-class-declaration.png){ width=500 }
 
-Classes are reference types and must be initiated with *new* keyword and reference must be assigned using *Set* keyword.
+Классы являются ссылочными типами и должны быть инициированы с помощью ключевого слова *new*, а ссылка должна быть назначена с помощью ключевого слова *Set*.
 
-Refer [Classes](/visual-basic/classes) article for more information about classes.
+Обратитесь к статье [Классы](/visual-basic/classes) для получения дополнительной информации о классах.
 
-Code example below shows how to declare and assign enumerator, type and class.
+Пример кода ниже показывает, как объявлять и назначать перечислитель, тип и класс.
 
-*Class declaration*
+*Объявление класса*
 {% code-snippet { file-name: example-MyClass-class-module.vba } %}
 
-*Module*
+*Модуль*
 {% code-snippet { file-name: example.vba } %}
