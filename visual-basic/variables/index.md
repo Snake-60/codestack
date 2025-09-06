@@ -1,15 +1,15 @@
 ---
-title: Variables, Constants and Data Types in Visual Basic
-caption: Variables, Constants and Data Types
-description: Explanation of variables and variable types in Visual Basic
+title: Переменные, константы и типы данных в Visual Basic
+caption: Переменные, константы и типы данных
+description: Объяснение переменных и типов переменных в Visual Basic
 order: 2
 ---
-This section explains the usage of variables and constants when developing code in Visual Basic. 
+В этом разделе объясняется использование переменных и констант при разработке кода на Visual Basic.
 
-Variables are used to store the information of different types (e.g. numeric, text, date etc.). Value of the variable can be assigned and changed at run-time.
+Переменные используются для хранения информации различных типов (например, числовой, текстовой, даты и т.д.). Значение переменной может быть назначено и изменено во время выполнения.
 
-Unlike variables, constants cannot be changed during the runtime and will always have the value assigned to the constant at declaration. Constant is a good way to store the data which will never change within the application.
+В отличие от переменных, константы не могут быть изменены во время выполнения и всегда будут иметь значение, присвоенное константе при объявлении. Константа - это хороший способ хранения данных, которые никогда не изменятся в приложении.
 
-There are different types of data which variables and constants can hold. The data types can be classified into two main groups: value types (variable holds the actual value in its own memory allocation) and reference types (variable holds the reference to the object which is stored in different memory allocation). The reference is assigned using **Set** keyword.
+Существуют различные типы данных, которые могут содержать переменные и константы. Типы данных можно классифицировать на две основные группы: типы значений (переменная содержит фактическое значение в собственном выделении памяти) и ссылочные типы (переменная содержит ссылку на объект, который хранится в другом выделении памяти). Ссылка назначается с использованием ключевого слова **Set**.
 
-> Note. Assigning the reference from one variable to another doesn't copy the value of the object and those variables will point to the same object in memory.
+> Примечание. Назначение ссылки от одной переменной к другой не копирует значение объекта, и эти переменные будут указывать на один и тот же объект в памяти.
