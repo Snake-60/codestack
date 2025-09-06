@@ -1,31 +1,31 @@
 ---
-title: SOLIDWORKS API Code Examples for Macros and Add-ins
-caption: API & Macros
-description: Collection of tutorials and examples on automating SOLIDWORKS using the SOLIDWORKS API in VBA and VSTA macros, add-ins and stand-alone applications
+title: Примеры кода SOLIDWORKS API для макросов и надстроек
+caption: API и макросы
+description: Коллекция учебных пособий и примеров по автоматизации SOLIDWORKS с использованием SOLIDWORKS API в VBA и VSTA макросах, надстройках и автономных приложениях
 image: solidworks-api-automation.png
 redirect-from:
   - /p/solidworks-api.html
 ---
-![SOLIDWORKS API Automation](solidworks-api-automation.png)
+![Автоматизация SOLIDWORKS API](solidworks-api-automation.png)
 
-SOLIDWORKS Application Programming Interface (API) is a set of libraries which are exposing the public functions to be used by 3rd party software for invoking the SOLIDWORKS native commands programmatically.
+SOLIDWORKS Application Programming Interface (API) - это набор библиотек, которые предоставляют публичные функции для использования сторонним программным обеспечением для программного вызова собственных команд SOLIDWORKS.
 
-Software developers can emulate the user interaction with SOLIDWORKS to implement the automation routines or compliment the SOLIDWORKS functionality by adding new commands to the application.
+Разработчики программного обеспечения могут эмулировать взаимодействие пользователя с SOLIDWORKS для реализации процедур автоматизации или дополнять функциональность SOLIDWORKS, добавляя новые команды в приложение.
 
-SOLIDWORKS API covers almost all functionality of SOLIDWORKS with the minor exceptions (in this case the API implementation is usually planned for future releases). So it is possible to say that everything user can do with SOLIDWORKS from the interface can be emulated in the code.
+SOLIDWORKS API охватывает почти всю функциональность SOLIDWORKS с незначительными исключениями (в этом случае реализация API обычно планируется для будущих выпусков). Поэтому можно сказать, что все, что пользователь может сделать с SOLIDWORKS через интерфейс, можно эмулировать в коде.
 
-SOLIDWORKS API is used by SOLIDWORKS partners to develop bespoke solutions (add-ins). Follow [SOLIDWORKS Partner Products](https://www.solidworks.com/engineering-software-partners-products) link for the list of registered solutions.
+SOLIDWORKS API используется партнерами SOLIDWORKS для разработки индивидуальных решений (надстроек). Перейдите по ссылке [Продукты партнеров SOLIDWORKS](https://www.solidworks.com/engineering-software-partner-products) для просмотра списка зарегистрированных решений.
 
-## Application
+## Применение
 
-* Automation software to reduce repetitive tasks (e.g. batch processing, commands grouping)
-* Specialized software (e.g. rendering, CAM, animation, steel fabrication, wood fabrication, etc.)
-* Additional commands
+* Программное обеспечение для автоматизации для сокращения повторяющихся задач (например, пакетная обработка, группировка команд)
+* Специализированное программное обеспечение (например, рендеринг, CAM, анимация, стальные конструкции, деревообработка и т.д.)
+* Дополнительные команды
 
-## Notes
+## Примечания
 
-* SOLIDWORKS API included in all packages of SOLIDWORKS (i.e. Standard, Professional and Premium).
-* SOLIDWORKS API Help is available [online](https://help.solidworks.com/2017/english/api/sldworksapiprogguide/welcome.htm)
-* Same as SOLIDWORKS itself its API is backward compatible but not forward compatible. I.e. older versions of macros and add-ins are compatible with future versions of SOLIDWORKS but not vice versa.
+* SOLIDWORKS API включен во все пакеты SOLIDWORKS (т.е. Standard, Professional и Premium).
+* Справка SOLIDWORKS API доступна [онлайн](https://help.solidworks.com/2017/english/api/sldworksapiprogguide/welcome.htm)
+* Так же, как и сам SOLIDWORKS, его API обратно совместим, но не вперед совместим. Т.е. более старые версии макросов и надстроек совместимы с будущими версиями SOLIDWORKS, но не наоборот.
 
-Please explore the Table of Content for more detailed guides and examples of SOLIDWORKS API.
+Пожалуйста, изучите оглавление для более подробных руководств и примеров SOLIDWORKS API.
