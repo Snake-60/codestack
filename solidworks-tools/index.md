@@ -28,34 +28,34 @@ group-descriptions:
 redirect-from:
   - /p/solidworks-goodies.html
 ---
-# Macro Library for SOLIDWORKS Automation
+# Библиотека макросов для автоматизации SOLIDWORKS
 {% social-share %}
 
-[Request macro](https://github.com/xarial/codestack/issues/new?labels=macro-request){ target="_blank" class="download-button" }
+[Запросить макрос](https://github.com/xarial/codestack/issues/new?labels=macro-request){ target="_blank" class="download-button" }
 
-![SOLIDWORKS Macros Library](macros-library.svg){ width=400 }
+![Библиотека макросов SOLIDWORKS](macros-library.svg){ width=400 }
 
-This page contains a library of useful macros, utilities and scripts for SOLIDWORKS engineers. Macros are grouped by categories: part assembly, drawing, performance etc.
+Эта страница содержит библиотеку полезных макросов, утилит и скриптов для инженеров SOLIDWORKS. Макросы сгруппированы по категориям: детали, сборки, чертежи, производительность и т.д.
 
-Follow the [Programming VBA and VSTA macros using SOLIDWORKS API](/solidworks-api/getting-started/macros/) section for guidelines of using and creating macros in SOLIDWORKS.
+Следуйте разделу [Программирование VBA и VSTA макросов с использованием SOLIDWORKS API](/solidworks-api/getting-started/macros/) для получения руководств по использованию и созданию макросов в SOLIDWORKS.
 
-Cannot find the macro for you? Submit the [request macro](https://github.com/xarial/codestack/issues/new?labels=macro-request) form and our team will review your request and will try to add the macro to the library.
+Не можете найти нужный макрос? Отправьте форму [запроса макроса](https://github.com/xarial/codestack/issues/new?labels=macro-request), и наша команда рассмотрит ваш запрос и постарается добавить макрос в библиотеку.
 
-## Best practices for organizing macro library
+## Лучшие практики организации библиотеки макросов
 
-[Toolbar+](https://cadplus.xarial.com/toolbar/) is a part a free and open-source [CAD+ Toolset](https://cadplus.xarial.com/) add-in for SOLIDWORKS which allows organize the macro library in custom toolbars integrated to SOLIDWORKS environment. Add-in also allows to manage multi-user environment by storing the configuration in the centralized location.
+[Toolbar+](https://cadplus.xarial.com/toolbar/) является частью бесплатного и открытого набора инструментов [CAD+ Toolset](https://cadplus.xarial.com/) для SOLIDWORKS, который позволяет организовать библиотеку макросов в пользовательских панелях инструментов, интегрированных в среду SOLIDWORKS. Надстройка также позволяет управлять многопользовательской средой, храня конфигурацию в централизованном месте.
 
-![Custom macro buttons in the toolbar](macro-library-toolbar.png){ width=450 }
+![Пользовательские кнопки макросов на панели инструментов](macro-library-toolbar.png){ width=450 }
 
-Alternatively macro buttons can be created using native SOLIDWORKS functionality. Read [Creating macro buttons in SOLIDWORKS toolbars](/solidworks-api/getting-started/macros/macro-buttons/) for more information.
+Альтернативно кнопки макросов можно создавать с использованием собственной функциональности SOLIDWORKS. Прочитайте [Создание кнопок макросов на панелях инструментов SOLIDWORKS](/solidworks-api/getting-started/macros/macro-buttons/) для получения дополнительной информации.
 
-Explore this section to find productivity and automation tools which suit your needs.
+Изучите этот раздел, чтобы найти инструменты повышения продуктивности и автоматизации, которые соответствуют вашим потребностям.
 
-For additional productivity add-ins visit the [SOLIDWORKS Labs](/labs/solidworks/) page.
+Для получения дополнительных надстроек повышения продуктивности посетите страницу [SOLIDWORKS Labs](/labs/solidworks/).
 
-## Batch Running
+## Пакетное выполнение
 
-in some cases it might be required to batch run macros for multiple files or folders with SOLIDWORKS files. Try [Batch+](https://cadplus.xarial.com/batch/) is a free stand-alone application part a free and open-source [CAD+ Toolset](https://cadplus.xarial.com/).
+В некоторых случаях может потребоваться пакетное выполнение макросов для нескольких файлов или папок с файлами SOLIDWORKS. Попробуйте [Batch+](https://cadplus.xarial.com/batch/) - бесплатное автономное приложение, часть бесплатного и открытого набора инструментов [CAD+ Toolset](https://cadplus.xarial.com/).
 
 ---
 {% catalogue { type: sw-tool } %}
