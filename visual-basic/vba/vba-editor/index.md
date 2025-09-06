@@ -1,19 +1,19 @@
 ---
-title: VBA Editor
-description: Walkthrough of user interface and functionality for VBA Editor
+title: Редактор VBA
+description: Обзор пользовательского интерфейса и функциональности редактора VBA
 sitemap: false
 ---
-*Coming soon...*
+*Скоро будет...*
 
-### Macros
+### Макросы
 
-#### Starting and editing macro
-#### Recording the macro
+#### Запуск и редактирование макроса
+#### Запись макроса
 
-### Toolbar customization
-### References management
+### Настройка панели инструментов
+### Управление ссылками
 
-### Adding new items to the project
-#### Modules
-#### Classes
-#### User Forms
+### Добавление новых элементов в проект
+#### Модули
+#### Классы
+#### Пользовательские формы
