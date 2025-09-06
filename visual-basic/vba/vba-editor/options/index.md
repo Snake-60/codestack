@@ -1,6 +1,6 @@
 ---
-title: VBA Editor Options
-description: Description of available options in VBA editor
+title: Опции редактора VBA
+description: Описание доступных опций в редакторе VBA
 sitemap: false
 ---
-*Coming soon...*
+*Скоро будет...*
