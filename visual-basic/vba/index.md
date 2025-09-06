@@ -1,11 +1,11 @@
 ---
-title: Visual Basic for Applications (VBA)
-description: Introduction to Visual Basic for Applications (VBA)
+title: Введение в Visual Basic for Applications (VBA)
+description: Введение в Visual Basic for Applications (VBA)
 order: 1
 sitemap: false
 ---
-*Coming soon...*
+*Скоро будет...*
 
-### What is VBA?
-### Various VBA implementations
+### Что такое VBA?
+### Различные реализации VBA
 ### VBA6 vs VBA7
