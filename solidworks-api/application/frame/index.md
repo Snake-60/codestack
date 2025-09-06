@@ -1,11 +1,11 @@
 ---
-title: Application frame customization using SOLIDWORKS API
-caption: Frame
-description: Automating SOLIDWORKS frame (menu, toolbars, command manager) using API
+title: Настройка главного окна приложения с использованием SOLIDWORKS API
+caption: Главное окно
+description: Автоматизация главного окна SOLIDWORKS (меню, панели инструментов, диспетчер команд) с использованием API
 labels: [frame,menu,toolbar,commands]
 ---
-Elements displayed in the SOLIDWORKS application frame, such as menu, command manager and tabs, toolbars can be customized using [IFrame](https://help.solidworks.com/2018/english/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.IFrame.html) and [ISldWorks](https://help.solidworks.com/2018/english/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.ISldWorks.html) SOLIDWORKS API Interfaces.
+Элементы, отображаемые в главном окне приложения SOLIDWORKS, такие как меню, диспетчер команд и вкладки, панели инструментов, могут быть настроены с использованием интерфейсов SOLIDWORKS API [IFrame](https://help.solidworks.com/2018/english/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.IFrame.html) и [ISldWorks](https://help.solidworks.com/2018/english/api/sldworksapi/SolidWorks.Interop.sldworks~SolidWorks.Interop.sldworks.ISldWorks.html).
 
-In addition frame object provides the access to SOLIDWORKS windows handler via [IFrame::GetHWnd](https://help.solidworks.com/2018/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.iframe~gethwnd.html) method which enables the usage of [Windows API to invoke SOLIDWORKS commands](https://blog.codestack.net/2019/03/solidworks-api-command-doesnt-exist.html).
+Кроме того, объект frame предоставляет доступ к дескриптору окон SOLIDWORKS через метод [IFrame::GetHWnd](https://help.solidworks.com/2018/english/api/sldworksapi/solidworks.interop.sldworks~solidworks.interop.sldworks.iframe~gethwnd.html), что позволяет использовать [Windows API для вызова команд SOLIDWORKS](https://blog.codestack.net/2019/03/solidworks-api-command-doesnt-exist.html).
 
-This section contains examples of using SOLIDWORKS API and Windows API to automate application frame.
+Этот раздел содержит примеры использования SOLIDWORKS API и Windows API для автоматизации главного окна приложения.
