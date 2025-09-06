@@ -1,20 +1,20 @@
 ---
-title: Automating SOLIDWORKS Application frame, menus and toolbars using API
-caption: Application
-description: Collection of articles and code examples for customization of SOLIDWORKS application frame, menus and toolbars and managing documents.
+title: Автоматизация главного окна, меню и панелей инструментов приложения SOLIDWORKS с использованием API
+caption: Приложение
+description: Коллекция статей и примеров кода для настройки главного окна, меню и панелей инструментов приложения SOLIDWORKS и управления документами.
 image: solidworks-application-api.png
 order: 3
 ---
 ![SOLIDWORKS Application API](solidworks-application-api.png){ width=350 }
 
-This section contains collection of articles and code examples for customization of SOLIDWORKS application frame and managing documents using API.
+Этот раздел содержит коллекцию статей и примеров кода для настройки главного окна приложения SOLIDWORKS и управления документами с использованием API.
 
-3rd party add-ins and macros can extend and alter the main frame of SOLIDWORKS application. This includes
+Сторонние надстройки и макросы могут расширять и изменять главное окно приложения SOLIDWORKS. Это включает:
 
-* Adding the menus and command groups into the header menu
-* Creating toolbars with commands
-* Creating command tabs and placing toolbars and commands under the tabs and groups
-* Creating context menus specific to the various selection entities
-* Finding information about existing commands, such as commands names and XY coordinates on the screen
+* Добавление меню и групп команд в главное меню
+* Создание панелей инструментов с командами
+* Создание вкладок команд и размещение панелей инструментов и команд под вкладками и группами
+* Создание контекстных меню, специфичных для различных выбранных объектов
+* Поиск информации о существующих командах, таких как имена команд и координаты XY на экране
 
-Although some of the customization is possible in the macros, in most cases all the UI specific changes would be performed within the add-in applications.
+Хотя некоторая настройка возможна в макросах, в большинстве случаев все изменения, связанные с пользовательским интерфейсом, выполняются в рамках приложений-надстроек.
