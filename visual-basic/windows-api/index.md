@@ -1,7 +1,7 @@
 ---
-title: Windows API Function
-description: Article explains how to import and use Windows API functions
+title: Функции Windows API
+description: Статья объясняет, как импортировать и использовать функции Windows API
 order: 16
 sitemap: false
 ---
-*Coming soon...*
+*Скоро будет...*
