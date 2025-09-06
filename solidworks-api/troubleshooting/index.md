@@ -1,10 +1,10 @@
 ---
-title: Troubleshooting the common errors in SOLIDWORKS API development
-caption: Troubleshooting
-description: Techniques for troubleshooting and fixing the errors in the SOLIDWORKS API applications (macros, add-ins and stand-alones)
+title: Устранение распространенных ошибок в разработке SOLIDWORKS API
+caption: Устранение неполадок
+description: Методы устранения и исправления ошибок в приложениях SOLIDWORKS API (макросы, надстройки и автономные приложения)
 image: troubleshooting-api.png
 order: 11
 ---
-![Troubleshooting applications developed using SOLIDWORKS API](troubleshooting-api.png){ width=300 }
+![Устранение неполадок приложений, разработанных с использованием SOLIDWORKS API](troubleshooting-api.png){ width=300 }
 
-This section provides the techniques for troubleshooting and fixing the errors in the SOLIDWORKS API applications (macros, add-ins and stand-alones)
+Этот раздел предоставляет методы устранения и исправления ошибок в приложениях SOLIDWORKS API (макросы, надстройки и автономные приложения)
