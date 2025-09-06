@@ -1,17 +1,17 @@
 ---
-title: Adding graphical elements to model graphics view using SOLIDWORKS API
-caption: Adornment
-description: Collection of articles and code examples which explain the different ways of customizing the view of the model and application (callouts, open GL graphics, etc.)
+title: Добавление графических элементов в графическое представление модели с использованием SOLIDWORKS API
+caption: Графическое оформление
+description: Коллекция статей и примеров кода, которые объясняют различные способы настройки вида модели и приложения (выноски, Open GL графика и т.д.)
 image: adornment-api.png
 order: 6
 ---
-![SOLIDWORKS API for adornment of models and application](adornment-api.png)
+![SOLIDWORKS API для графического оформления моделей и приложения](adornment-api.png)
 
-This section contains the articles and code examples which explain the different ways of customizing the view of the SOLIDWORKS model and application frame using API.
+Этот раздел содержит статьи и примеры кода, которые объясняют различные способы настройки вида модели SOLIDWORKS и главного окна приложения с использованием API.
 
-This includes, but not limited to
+Это включает, но не ограничивается:
 
-* Adding [callout](/solidworks-api/adornment/callouts/) objects. Those objects can be useful to display additional information, such as tags or properties for the specific entities. Callouts also supports data value entry.
-* Injecting custom 3D graphics to the model view via Open GL. This can be useful when it is required to render complex graphics directly in the SOLIDWORKS model without modifying its geometry. The most common usage scenario is preview or Finite Elements Analysis (FEA) rendering.
-* Adding 2D images on the graphics view
-* Embedding [OLE objects](solidworks-api/adornment/ole-objects/) into the model
+* Добавление объектов [выносок](/solidworks-api/adornment/callouts/). Эти объекты могут быть полезны для отображения дополнительной информации, такой как теги или свойства для определенных объектов. Выноски также поддерживают ввод данных.
+* Внедрение пользовательской 3D графики в представление модели через Open GL. Это может быть полезно, когда требуется отобразить сложную графику непосредственно в модели SOLIDWORKS без изменения ее геометрии. Наиболее распространенный сценарий использования - предварительный просмотр или визуализация анализа методом конечных элементов (FEA).
+* Добавление 2D изображений в графическое представление
+* Встраивание [OLE объектов](solidworks-api/adornment/ole-objects/) в модель
