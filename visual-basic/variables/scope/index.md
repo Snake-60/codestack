@@ -1,19 +1,19 @@
 ---
-title: Variables Scope in Visual Basic
-caption: Variables Scope
-description: Article explaining different variables scopes (public and private class level, local) in Visual Basic
+title: Область видимости переменных в Visual Basic
+caption: Область видимости переменных
+description: Статья, объясняющая различные области видимости переменных (публичные и приватные на уровне класса, локальные) в Visual Basic
 image: custom-module-named-module1.png
 order: 4
 ---
-In Visual Basic language variables can be declared in different scopes (module level, local in the function, within the code block) with different access modifiers (private or public) which define their visibility in the code.
+В языке Visual Basic переменные могут быть объявлены в разных областях видимости (уровень модуля, локальные в функции, внутри блока кода) с разными модификаторами доступа (private или public), которые определяют их видимость в коде.
 
-## Class or module (aka members)
+## Класс или модуль (также известные как члены)
 
-Usually declared in the header of the class (outside of functions and procedures). Member variables have 2 levels of visibility (private and public).
+Обычно объявляются в заголовке класса (вне функций и процедур). Переменные-члены имеют 2 уровня видимости (private и public).
 
 ### Private
 
-Declared using *Dim* or *Private* keyword and only visible by the function and procedures within the scope of this class or module.
+Объявляются с использованием ключевого слова *Dim* или *Private* и видны только функциям и процедурам в пределах этого класса или модуля.
 
 *Module1*
 
@@ -22,18 +22,18 @@ Dim member As Integer
 Private member1 As String
 
 Sub Init()
-    member = 10 'visible within the Init function of the Module
+    member = 10 'видна внутри функции Init модуля
     member1 = "A"
 End Sub
 ~~~
 
-Private variables cannot be accessed from outside of the module or class. Compile error: method or data member not found occurs when attempting to access the private member from outside class or module.
+Приватные переменные не могут быть доступны извне модуля или класса. Ошибка компиляции: метод или член данных не найден возникает при попытке доступа к приватному члену извне класса или модуля.
 
-![Compile error: method or data member not found when calling the privately declared variable from outside class](not-found-member-on-private-variable.png){ width=500 }
+![Ошибка компиляции: метод или член данных не найден при вызове приватно объявленной переменной извне класса](not-found-member-on-private-variable.png){ width=500 }
 
 ### Public
 
-Public variables declared using the *Public* keyword and can be accessed both from current module or class and external module or class.
+Публичные переменные объявляются с использованием ключевого слова *Public* и могут быть доступны как из текущего модуля или класса, так и из внешнего модуля или класса.
 
 *Module1*
 ~~~vb jagged
@@ -43,81 +43,81 @@ Dim publicMember As Integer
 *Module2*
 ~~~vb jagged
 Sub main()
-    Module1.publicMember = 20 'variable is accessed and assigned from the external module
+    Module1.publicMember = 20 'переменная доступна и назначена из внешнего модуля
 End Sub
 ~~~
 
-Alternatively public member can be declared with the *Global* keyword. It will act exactly the same as *Public* however can only be declared within the [module](/visual-basic/modules/) and cannot be declared in the [user form](/visual-basic/user-forms/) or [class module](/visual-basic/classes/).
+Альтернативно публичный член может быть объявлен с ключевым словом *Global*. Он будет вести себя так же, как *Public*, однако может быть объявлен только в [модуле](/visual-basic/modules/) и не может быть объявлен в [пользовательской форме](/visual-basic/user-forms/) или [модуле класса](/visual-basic/classes/).
 
-## Local
+## Локальные
 
-Local variables declared in the scope of specific code block or function and only visible within that block for the code appearing after the declaration of the variable
+Локальные переменные объявляются в области видимости конкретного блока кода или функции и видны только внутри этого блока для кода, появляющегося после объявления переменной
 
 ~~~ vb jagged
 Dim var1 As Double
-var1 = 0.5 'var1 is visible here
-var2 = 0.25 'var2 is not visible at this step as it is declared in the next line
+var1 = 0.5 'var1 видна здесь
+var2 = 0.25 'var2 не видна на этом шаге, так как объявлена в следующей строке
 Dim var2 As Double
 ~~~
 
-### Code block
-Variables defined in the loops or conditional statements
+### Блок кода
+Переменные, определенные в циклах или условных операторах
 
 ~~~ vb jagged
 If res Then
-    Dim localVar As Integer 'local variable defined within the If code block
+    Dim localVar As Integer 'локальная переменная, определенная внутри блока кода If
     localVar = 25
 End If
 ~~~
 
-Although, local code block variables are only visible within this code block, same variable name cannot be used in other code block.
+Хотя локальные переменные блока кода видны только внутри этого блока, то же имя переменной не может быть использовано в другом блоке кода.
 
-### Function or procedure
+### Функция или процедура
 
-Variables defined in the context of function or procedure. These variables are visible within the function or any nested code blocks.
+Переменные, определенные в контексте функции или процедуры. Эти переменные видны внутри функции или любых вложенных блоков кода.
 
 ~~~ vb
 Sub main()
     Dim localVar As String
     Dim localBoolVar As Boolean
     localVar = "Hello World"
-    If localBoolVar Then 'local variable accessed in the conditional statement
-        localVar = "New Hello World" 'local variable modified within the body of conditional statement
+    If localBoolVar Then 'локальная переменная доступна в условном операторе
+        localVar = "New Hello World" 'локальная переменная изменена внутри тела условного оператора
     End If
 End Sub
 ~~~
 
-### Function or procedure parameter
+### Параметр функции или процедуры
 
-Variables are defined in the signature of the function. These variables declaration equivalent to the local function variable declared at the first line of the function body, i.e. the variables are visible for all code blocks within this function.
+Переменные определены в сигнатуре функции. Эти объявления переменных эквивалентны локальной переменной функции, объявленной в первой строке тела функции, т.е. переменные видны для всех блоков кода внутри этой функции.
 
 ~~~ vb
 Sub DoWork(paramVar As Double, paramVar2 As Integer)
 End Sub
 ~~~
 
-This example demonstrates the behaviour of variables declared in the different scopes:
+Этот пример демонстрирует поведение переменных, объявленных в разных областях видимости:
 
 *Module1*
-![Module1 module in the Visual Basic Project](custom-module-named-module1.png)
+![Модуль Module1 в проекте Visual Basic](custom-module-named-module1.png)
 
 {% code-snippet { file-name: different-scopes-example-module1.vba } %}
 
-*Main Module*
+*Главный модуль*
 
 {% code-snippet { file-name: different-scopes-example.vba } %}
 
-Output to [Immediate Window](visual-basic/vba/vba-editor/windows#immediate-window)
+Вывод в [Immediate Window](visual-basic/vba/vba-editor/windows#immediate-window)
 
-![Output of variable values](immediate-window-output.png){ width=350 }
+![Вывод значений переменных](immediate-window-output.png){ width=350 }
 
-## Scope Table
+## Таблица областей видимости
 
-Given the following project structure:
+При следующей структуре проекта:
 
-![VBA project](vb-project.png)
+![VBA проект](vb-project.png)
 
-Each of the files has the following declarations:
+Каждый из файлов имеет следующие объявления:
 
 ### UserForm
 
@@ -125,7 +125,7 @@ Each of the files has the following declarations:
 Public VarFormPublic As String
 Private VarFormPrivate As String
 Dim VarFormDim As String
-Dim VarFormGlobal As String 'cannot be declared
+Dim VarFormGlobal As String 'не может быть объявлена
 ~~~
 
 ### Module
@@ -143,12 +143,12 @@ Private VarModulePrivate As String
 Public VarClassPublic As String
 Dim VarClassDim As String
 Private VarClassPrivate As String
-Dim VarClassGlobal As String 'cannot be declared
+Dim VarClassGlobal As String 'не может быть объявлена
 ~~~
 
-Table below describes the visibility of variables across different files
+Таблица ниже описывает видимость переменных в разных файлах
 
-|Variable Name|UserForm|Module|Module1|Class
+|Имя переменной|UserForm|Module|Module1|Class
 |---|---|--|--|--|
 VarFormPublic|✓|✓|✓|✓|
 VarFormPrivate|✓|☓|☓|☓|
