@@ -1,21 +1,21 @@
 ---
-title: VBA Editor Windows
-description: Walkthrough the different windows available in VBA editor
+title: Окна редактора VBA
+description: Обзор различных окон, доступных в редакторе VBA
 image: immediate-window-menu.png
 ---
-## Immediate Window
+## Immediate Window (Окно непосредственного просмотра)
 
-Immediate Window is a console which collects the output messages printed from the code.
+Immediate Window - это консоль, которая собирает выходные сообщения, выводимые из кода.
 
-Immediate window is usually used in debugging and troubleshooting as a simple way to output the log or the current state of variables.
+Окно Immediate обычно используется при отладке и устранении неполадок как простой способ вывода журнала или текущего состояния переменных.
 
-To enable this window click the *View->Immediate Window* command ot *Ctrl+G* shortcut.
+Чтобы включить это окно, нажмите команду *View->Immediate Window* или сочетание клавиш *Ctrl+G*.
 
 ![Immediate Window Menu](immediate-window-menu.png)
 
-Window can be docked to any panel in VBA Editor.
+Окно можно закрепить на любой панели в редакторе VBA.
 
-In order to output messages to this window use *Debug.Print* command
+Для вывода сообщений в это окно используйте команду *Debug.Print*
 
 ~~~ vb jagged
 Dim str As String
@@ -26,4 +26,4 @@ Debug.Print str
 
 ![Output in the immediate window](imediate-window-output.png)
 
-## Watch Window
+## Watch Window (Окно наблюдения)
