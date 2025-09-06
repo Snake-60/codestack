@@ -1,13 +1,13 @@
 ---
-caption: Export Relative To Coordinate System
-title: VBA macro to export active documetn relative to the specified coordinate system using SOLIDWORKS API
-description: VBA macro exports active model into the foreign format relative to the specified coordinate system usign SOLIDWORKS API
+caption: Экспорт относительно системы координат
+title: VBA макрос для экспорта активного документа относительно указанной системы координат с использованием SOLIDWORKS API
+description: VBA макрос экспортирует активную модель в иностранный формат относительно указанной системы координат с использованием SOLIDWORKS API
 ---
 
-This VBA macro demonstrates how to export active SOLIDWORKS document (part or assembly) to foreign format relative to the specified coordinate system.
+Этот VBA макрос демонстрирует, как экспортировать активный документ SOLIDWORKS (деталь или сборку) в иностранный формат относительно указанной системы координат.
 
-File is saved into the same folder with the same name as the original file.
+Файл сохраняется в ту же папку с тем же именем, что и исходный файл.
 
-Specify the name of hte coordinate system in **OUT_COORD_SYSTEM_NAME** constant. Specify the output file extension in the **OUT_EXTENSION** constant.
+Укажите имя системы координат в константе **OUT_COORD_SYSTEM_NAME**. Укажите расширение выходного файла в константе **OUT_EXTENSION**.
 
 {% code-snippet { file-name: Macro.vba } %}
