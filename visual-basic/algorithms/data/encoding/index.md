@@ -1,7 +1,7 @@
 ---
-title: Encoding data in Visual Basic 6 (VBA)
-caption: Encoding
-description: Overview of options to encode the data in Visual Basic 6 (VBA)
+title: Кодирование данных в Visual Basic 6 (VBA)
+caption: Кодирование
+description: Обзор вариантов кодирования данных в Visual Basic 6 (VBA)
 labels: [encoding,base64]
 ---
-Algorithms and libraries to encode the data in different formats in Visual Basic 6 (VBA)
+Алгоритмы и библиотеки для кодирования данных в различных форматах в Visual Basic 6 (VBA)
