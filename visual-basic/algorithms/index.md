@@ -1,13 +1,13 @@
 ---
-title: Collection of algorithms for Visual Basic
-caption: Algorithms
-description: Collection of common algorithms and function for writing code in Visual Basic
+title: Коллекция алгоритмов для Visual Basic
+caption: Алгоритмы
+description: Коллекция распространенных алгоритмов и функций для написания кода на Visual Basic
 order: 17
 sitemap: true
 ---
-*Coming soon...*
+*Скоро будет...*
 
-### Working with file system objects
-### Connecting to database
-### Reading the Comma Separated Values file
-### Using regular expressions
+### Работа с объектами файловой системы
+### Подключение к базе данных
+### Чтение файлов с разделителями-запятыми (CSV)
+### Использование регулярных выражений
