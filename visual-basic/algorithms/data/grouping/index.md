@@ -1,8 +1,8 @@
 ---
-title: Convert array to dictionary in Visual Basic
-caption: Grouping
-description: This example shows how to group the array of the elements into the dictionary by using the key selector in Visual Basic
+title: Преобразование массива в словарь в Visual Basic
+caption: Группировка
+description: Этот пример показывает, как сгруппировать массив элементов в словарь с использованием селектора ключей в Visual Basic
 ---
-This Visual Basic example shows how to group the array of the elements into the dictionary by using the key selector
+Этот пример на Visual Basic показывает, как сгруппировать массив элементов в словарь с использованием селектора ключей
 
 {% code-snippet { file-name: to-dictionary.vba } %}
