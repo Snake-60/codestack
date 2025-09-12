@@ -1,9 +1,9 @@
 ---
-title: Visual Basic (VBA) Data manipulation examples
-caption: Data Manipulation
-description: Collection of examples showing the different ways of manipulating the data (sorting, grouping, selecting etc.) in Visual Basic  (VBA)
+title: Примеры манипуляции данными в Visual Basic (VBA)
+caption: Манипуляция данными
+description: Коллекция примеров, показывающих различные способы манипуляции данными (сортировка, группировка, выборка и т.д.) в Visual Basic (VBA)
 sitemap: true
 ---
-This section contains various examples in Visual Basic which can be useful when data manipulation is required. For examples how to sort the data in the array or collection, how to group the data with a common key and represent it in the dictionary or how to find the certain element in the data set.
+Этот раздел содержит различные примеры на Visual Basic, которые могут быть полезны, когда требуется манипуляция данными. Например, как сортировать данные в массиве или коллекции, как группировать данные с общим ключом и представлять их в словаре или как найти определенный элемент в наборе данных.
 
-Those examples are platform neutral and can be used in any Visual Basic for Application (VBA) platform (i.e. SOLIDWORKS and AutoCAD macros, Microsoft Word and Excel macros, etc.)
+Эти примеры являются платформно-независимыми и могут использоваться на любой платформе Visual Basic for Application (VBA) (т.е. макросы SOLIDWORKS и AutoCAD, макросы Microsoft Word и Excel и т.д.)
