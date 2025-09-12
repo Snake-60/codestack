@@ -1,12 +1,12 @@
 ---
-title: Encoding and decoding data in Base64 string format in Visual Basic 6 (VBA)
-caption: Base64 String
-description: Encoding and decoding byte array into Base64 string format in Visual Basic 6 (VBA)
+title: Кодирование и декодирование данных в формате строки Base64 в Visual Basic 6 (VBA)
+caption: Строка Base64
+description: Кодирование и декодирование байтового массива в формат строки Base64 в Visual Basic 6 (VBA)
 labels: [base64,encoding,decoding]
 ---
-Base64 string allow to hold the byte array data in the string format
+Строка Base64 позволяет хранить данные байтового массива в строковом формате
 
-## Encode
+## Кодирование
 
 ~~~vb
 Dim arr(5) As Byte
@@ -19,14 +19,14 @@ base64Str = ConvertToBase64String(arr) 'AQUCFWUz
 
 {% code-snippet { file-name: encode-base64.vba } %}
 
-## Decode
+## Декодирование
 
 ~~~vb
 Dim base64Str As String
 base64Str = "AQUCFWUz"
 
 dim vArr As Variant
-vArr = Base64ToArray(base64Str) 'Byte array: 1, 5, 2, 21, 101, 51
+vArr = Base64ToArray(base64Str) 'Байтовый массив: 1, 5, 2, 21, 101, 51
 ~~~
 
 {% code-snippet { file-name: decode-base64.vba } %}
