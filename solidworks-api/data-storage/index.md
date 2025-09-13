@@ -1,24 +1,24 @@
 ---
-title: Storing data in SOLIDWORKS models using API
-caption: Data Storage
-description: Collection of articles and code examples which demonstrate how to store different type of data within the SOLIDWORKS models (3rd party storage, attributes, custom properties)
+title: Хранение данных в моделях SOLIDWORKS с использованием API
+caption: Хранение данных
+description: Коллекция статей и примеров кода, демонстрирующих, как хранить различные типы данных в моделях SOLIDWORKS (стороннее хранилище, атрибуты, пользовательские свойства)
 image: solidworks-model-data-storage.png
 order: 4
 ---
-![Storing the user data in the model via API](solidworks-model-data-storage.png){ width=250 }
+![Сохранение пользовательских данных в модели через API](solidworks-model-data-storage.png){ width=250 }
 
-SOLIDWORKS provides multiple ways to store the custom user data (i.e. text, numbers or more complex types like images or videos) within the SOLIDWORKS models using API. The most common ways are:
+SOLIDWORKS предоставляет несколько способов хранения пользовательских данных (т.е. текст, числа или более сложные типы, такие как изображения или видео) в моделях SOLIDWORKS с использованием API. Наиболее распространенные способы:
 
-## Custom Properties
+## Пользовательские свойства
 
-Allows to add custom key-value pairs into the model or a configuration. Type of the key is case-insensitive string which must be unique within the scope (i.e. document level or configuration). Type of the value can be: text, number, date and boolean (Yes or No). Custom properties can be edited by the user.
+Позволяют добавлять пользовательские пары ключ-значение в модель или конфигурацию. Тип ключа - нечувствительная к регистру строка, которая должна быть уникальной в пределах области (т.е. уровень документа или конфигурация). Тип значения может быть: текст, число, дата и логическое значение (Да или Нет). Пользовательские свойства могут быть отредактированы пользователем.
 
-## Attributes
+## Атрибуты
 
-Attributes are custom features added to the feature tree which might hold the parameters with values (string or numeric). Attributes can be also associated with the selectable objects (face, vertex, edge and component). Attributes cannot be associated with sketch segments. Attributes can be hidden in the features tree. Attributes cannot be changed from the User Interface.
+Атрибуты - это пользовательские элементы, добавленные в дерево элементов, которые могут содержать параметры со значениями (строка или число). Атрибуты также могут быть связаны с выбираемыми объектами (грань, вершина, ребро и компонент). Атрибуты не могут быть связаны с сегментами эскиза. Атрибуты могут быть скрыты в дереве элементов. Атрибуты не могут быть изменены из пользовательского интерфейса.
 
-## 3rd Party Storage
+## Стороннее хранилище
 
-SOLIDWORKS allows creating custom COM storage within the main model's stream. It is possible to serialize/deserialize any custom data in this stream.
+SOLIDWORKS позволяет создавать пользовательское COM хранилище в основном потоке модели. Можно сериализовать/десериализовать любые пользовательские данные в этом потоке.
 
-This section contains macros and code examples which demonstrates usage of above techniques to save data in the model using SOLIDWORKS API.
+Этот раздел содержит макросы и примеры кода, которые демонстрируют использование вышеуказанных техник для сохранения данных в модели с использованием SOLIDWORKS API.
